@@ -1,0 +1,103 @@
+<!-- reporters/templates/reporters/welcome.html -->
+{% extends "reporters/base.html" %}
+{% load static %}
+{% block content %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    .welcome-container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #007bff;
+        margin-top: 0;
+    }
+    h3 {
+        color: #0056b3;
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 5px;
+        margin-top: 20px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+    ul li {
+        margin-bottom: 10px;
+    }
+    .about-me, .services {
+        margin-bottom: 20px;
+    }
+    .contact-buttons {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 5px;
+    }
+    .btn-primary {
+        background-color: #007bff;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+    .btn-secondary {
+        background-color: #6c757d;
+    }
+    .btn-secondary:hover {
+        background-color: #5a6268;
+    }
+</style>
+
+<div class="welcome-container">
+    <h2>Welcome to Thamsanqa Male William's Freelance Services</h2>
+    <p>I specialize in creating automated trading solutions for the forex market. With a strong background in software development, particularly in Python and Django, I offer customized MQL4 and MQL5 scripts and fully-tested forex robots at competitive prices.</p>
+    
+    <div class="about-me">
+        <h3>About Me</h3>
+        <p>My name is Thamsanqa Male William. I hold a BCom in Information Systems, where I have gained comprehensive knowledge in software development and information systems. My coursework included modules in:</p>
+        <ul>
+            <li><strong>Software Development:</strong> Understanding the fundamental structure of software and its application in various contexts.</li>
+            <li><strong>Information Systems:</strong> Gaining insights into different information systems and troubleshooting day-to-day tech issues like printers and computers.</li>
+            <li><strong>Business Management and Entrepreneurship:</strong> Learning how businesses use IT to enhance their operations and the role of IT in organizational efficiency.</li>
+        </ul>
+    </div>
+    
+    <div class="services">
+        <h3>Services Offered</h3>
+        <p>I offer a range of services tailored to the needs of forex traders, including:</p>
+        <ul>
+            <li><strong>MQL4/5 Script Creation:</strong> Developing custom scripts for forex trading automation.</li>
+            <li><strong>Fully-Tested Forex Robots:</strong> Providing high-quality, thoroughly tested forex robots that are designed to deliver optimal performance.</li>
+            <li><strong>Software Solutions:</strong> Offering tailored software solutions for various trading needs.</li>
+        </ul>
+    </div>
+    
+    <div class="contact-buttons">
+        <a href="{% url 'register' %}" class="btn btn-primary">Contact Me</a>
+        <a href="{% url 'login' %}" class="btn btn-secondary">View Portfolio</a>
+    </div>
+</div>
+
+{% endblock %}

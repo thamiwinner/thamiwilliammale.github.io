@@ -1,0 +1,113 @@
+<!-- reporters/templates/reporters/register.html -->
+{% extends "reporters/base.html" %}
+{% block content %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        color: #007bff;
+    }
+    h3 {
+        color: #0056b3;
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 5px;
+    }
+    h4 {
+        color: #004085;
+        margin-top: 20px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    form {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li {
+        background: #e9ecef;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<h2>Register</h2>
+<p>Register to gain access to our premium services. Please fill out the form below to create your account.</p>
+
+
+
+<h3>Our Service Pricing</h3>
+<p>We offer a range of services tailored to meet your needs. Below is an overview of our pricing:</p>
+
+<h4>Software Development</h4>
+<ul>
+    <li><strong>Basic Package:</strong> $2,000 - Includes development of a basic application with core features and functionalities.</li>
+    <li><strong>Standard Package:</strong> $5,000 - Includes development of a medium-complexity application with additional features and integrations.</li>
+    <li><strong>Premium Package:</strong> $10,000 - Includes development of a high-complexity application with advanced features, custom integrations, and extensive testing.</li>
+    <li><strong>Maintenance and Support:</strong> $500/month - Ongoing support and maintenance, including updates and troubleshooting.</li>
+</ul>
+
+<h4>Web Development</h4>
+<ul>
+    <li><strong>Basic Website:</strong> $1,000 - Includes a standard website with up to 5 pages, responsive design, and basic SEO optimization.</li>
+    <li><strong>Business Website:</strong> $2,500 - Includes a more complex website with up to 15 pages, advanced SEO, and integration with CMS.</li>
+    <li><strong>E-commerce Website:</strong> $4,000 - Includes a fully functional e-commerce site with shopping cart, payment gateway, and product management.</li>
+    <li><strong>Custom Web Applications:</strong> $6,000 - $15,000 - Pricing varies based on the complexity and features of the custom web application.</li>
+</ul>
+
+<h4>Forex Trading Automation</h4>
+<ul>
+    <li><strong>Basic Trading Bot:</strong> $1,500 - Includes a basic trading bot with predefined trading strategies and limited customization.</li>
+    <li><strong>Advanced Trading Bot:</strong> $3,500 - Includes an advanced trading bot with customizable strategies, real-time analysis, and advanced risk management.</li>
+    <li><strong>Full Automation Suite:</strong> $6,000 - Includes comprehensive automation tools with multiple trading strategies, advanced analytics, and seamless integration with major trading platforms.</li>
+    <li><strong>Consultation and Strategy Development:</strong> $500/hour - Expert consultation to develop and refine trading strategies and automation systems.</li>
+</ul>
+
+<p>If you have specific needs or require a custom quote, please <a href="mailto:thamiwinner@gmail.com">contact us</a>. We're here to provide tailored solutions to fit your requirements.</p>
+
+{% endblock %}
